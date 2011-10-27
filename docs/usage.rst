@@ -11,7 +11,7 @@ and one that returns a randomized queryset::
     
     {% random_testimonials as quotes %}
 
-    or::
+or::
 
     {% load marturion_tags %}
     
