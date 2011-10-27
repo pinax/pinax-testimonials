@@ -3,7 +3,7 @@
 Usage
 =====
 
-Using `marturion` is fairily straight forward. You consume quotes through the use
+Using `marturion` is fairly straight forward. You consume quotes through the use
 of two different template tags. One that returns a queryset of all testimonials
 and one that returns a randomized queryset::
 
