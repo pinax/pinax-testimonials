@@ -19,7 +19,7 @@ class TestimonialsNode(template.Node):
             raise template.TemplateSyntaxError("Second argument to %r must be "
                 "'as'" % bits[0])
         
-        return cls(bits[2], bits[3], order_by)
+        return cls(parser.compile_filter(bits[1]), bits[3], order_by)
     
     def __init__(self, how_many, context_var, order_by):
         self.how_many = how_many
@@ -28,14 +28,12 @@ class TestimonialsNode(template.Node):
     
     def render(self, context):
         how_many = self.how_many.resolve(context)
-        context[self.context_var] = [
-            t
-            for t in Testimonial.objects.filter(
+        context[self.context_var] = list(Testimonial.objects.filter(
                 active=True
             ).order_by(
                 self.order_by
             )[:how_many]
-        ]
+        )
         return u""
 
 

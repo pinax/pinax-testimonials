@@ -3,6 +3,12 @@
 ChangeLog
 =========
 
+0.1.4
+-----
+
+- Fixed bug introduction with last bug fix.
+
+
 0.1.3
 -----
 
