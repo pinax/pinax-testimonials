@@ -1,6 +1,6 @@
 from django import template
 
-from marturion.models import Testimoninal
+from marturion.models import Testimonial
 
 
 register = template.Library()
@@ -26,7 +26,7 @@ class TestimonialsNode(template.Node):
         self.order_by = order_by
     
     def render(self, context):
-        context[self.context_var] = Testimoninal.objects.filter(
+        context[self.context_var] = Testimonial.objects.filter(
             active=True
         ).order_by(
             self.order_by

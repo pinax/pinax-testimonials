@@ -1,10 +1,10 @@
 from django.contrib import admin
 
-from marturion.models import Testimoninal
+from marturion.models import Testimonial
 
 
-class TestimoninalAdmin(admin.ModelAdmin):
+class TestimonialAdmin(admin.ModelAdmin):
     list_display = ["id", "text", "added", "active"]
 
 
-admin.site.register(Testimoninal, TestimoninalAdmin)
+admin.site.register(Testimonial, TestimonialAdmin)
