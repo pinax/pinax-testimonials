@@ -4,7 +4,7 @@ from django.db import models
 
 
 
-class Testimoninal(models.Model):
+class Testimonial(models.Model):
     
     text = models.TextField()
     author = models.CharField(max_length=100)
