@@ -9,13 +9,13 @@ and one that returns a randomized queryset::
 
     {% load marturion_tags %}
     
-    {% random_testimonials as quotes %}
+    {% random_testimonials <number> as quotes %}
 
 or::
 
     {% load marturion_tags %}
     
-    {% testimonials as quotes %}
+    {% testimonials <number> as quotes %}
 
 
 To input quotes, you simply add them through the Django admin.
