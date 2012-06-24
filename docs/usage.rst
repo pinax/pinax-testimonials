@@ -18,4 +18,9 @@ or::
     {% testimonials <number> as quotes %}
 
 
+If you just want a single random testimonial you can use::
+
+    {% random_testimonial as quote %}
+
+
 To input quotes, you simply add them through the Django admin.
