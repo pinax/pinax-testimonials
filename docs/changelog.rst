@@ -3,6 +3,13 @@
 ChangeLog
 =========
 
+0.2
+---
+
+- Fixed documenation bug
+- Added a template tag for fetching a single random quote
+
+
 0.1.4
 -----
 
