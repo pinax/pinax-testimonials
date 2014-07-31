@@ -7,7 +7,7 @@ register = template.Library()
 
 
 class TestimonialsNode(template.Node):
-    
+
     @classmethod
     def handle_token(cls, parser, token, order_by, **kwargs):
         bits = token.split_contents()
@@ -21,12 +21,12 @@ class TestimonialsNode(template.Node):
             return cls(parser.compile_filter(bits[1]), bits[3], order_by)
         else:
             raise template.TemplateSyntaxError("Invalid number of arguments for %r " % bits[0])
-    
+
     def __init__(self, how_many, context_var, order_by):
         self.how_many = how_many
         self.context_var = context_var
         self.order_by = order_by
-    
+
     def render(self, context):
         if self.how_many == 1:
             how_many = 1
