@@ -32,7 +32,8 @@ class TestimonialsNode(template.Node):
             how_many = 1
         else:
             how_many = self.how_many.resolve(context)
-        context[self.context_var] = list(Testimonial.objects.filter(
+        context[self.context_var] = list(
+            Testimonial.objects.filter(
                 active=True
             ).order_by(
                 self.order_by
