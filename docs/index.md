@@ -34,12 +34,15 @@ For random testimonials:
 
     {% random_testimonials <number> as quotes %}
 
+
 For testimonials ordered by the date they were added:
 
     {% testimonials <number> as quotes %}
 
-If you just want a single random testimonial you can use::
+
+If you just want a single random testimonial you can use:
 
     {% random_testimonial as quote %}
+
 
 To add and manage quotes, you simply add them through the Django admin.
