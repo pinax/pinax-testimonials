@@ -14,7 +14,7 @@ Install the development version:
 
     pip install pinax-testimonials
 
-Add `pinax-{{ app_name }}` to your `INSTALLED_APPS` setting:
+Add `pinax-testimonials` to your `INSTALLED_APPS` setting:
 
     INSTALLED_APPS = (
         # ...
