@@ -1,27 +1,29 @@
-marturion
-=========
+pinax-testimonials
+========================
 
-.. image:: https://img.shields.io/travis/eldarion/marturion.svg
-    :target: https://travis-ci.org/eldarion/marturion
+.. image:: https://img.shields.io/travis/pinax/pinax-testimonials.svg
+    :target: https://travis-ci.org/pinax/pinax-testimonials
 
-.. image:: https://img.shields.io/coveralls/eldarion/marturion.svg
-    :target: https://coveralls.io/r/eldarion/marturion
+.. image:: https://img.shields.io/coveralls/pinax/pinax-testimonials.svg
+    :target: https://coveralls.io/r/pinax/pinax-testimonials
 
-.. image:: https://img.shields.io/pypi/dm/marturion.svg
-    :target:  https://pypi.python.org/pypi/marturion/
+.. image:: https://img.shields.io/pypi/dm/pinax-testimonials.svg
+    :target:  https://pypi.python.org/pypi/pinax-testimonials/
 
-.. image:: https://img.shields.io/pypi/v/marturion.svg
-    :target:  https://pypi.python.org/pypi/marturion/
+.. image:: https://img.shields.io/pypi/v/pinax-testimonials.svg
+    :target:  https://pypi.python.org/pypi/pinax-testimonials/
 
-.. image:: https://img.shields.io/badge/license-BSD-blue.svg
-    :target:  https://pypi.python.org/pypi/marturion/
-
-
-A testimonials app for your Django site.
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
+    :target:  https://pypi.python.org/pypi/pinax-testimonials/
 
 
-Documentation
--------------
+Welcome to the documentation for pinax-testimonials!
 
-Documentation can be found online at http://marturion.readthedocs.org/.
 
+Running the Tests
+------------------------------------
+
+::
+
+    $ pip install detox
+    $ detox
