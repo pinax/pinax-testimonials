@@ -17,8 +17,6 @@ pinax-testimonials
     :target:  https://pypi.python.org/pypi/pinax-testimonials/
 
 
-Welcome to the documentation for pinax-testimonials!
-
 
 Running the Tests
 ------------------------------------
