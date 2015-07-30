@@ -29,6 +29,9 @@ can use template tags to add active testimonials to your page:
 
     {% load testimonial_tags %}
 
+For show all testimonials:
+
+    {% all_testimonial %}
 
 For random testimonials:
 
