@@ -23,4 +23,4 @@ def testimonials(number):
 
 @register.assignment_tag
 def all_testimonial():
-	return Testimonial.objects.filter(active=True).order_by("-added")
+    return Testimonial.objects.filter(active=True).order_by("-added")
