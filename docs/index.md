@@ -29,7 +29,7 @@ can use template tags to add active testimonials to your page:
 
     {% load testimonial_tags %}
 
-For show all testimonials:
+For show all testimonials by ordered the date:
 
     {% all_testimonial %}
 
@@ -47,5 +47,14 @@ If you just want a single random testimonial you can use:
 
     {% random_testimonial as quote %}
 
+And there is an example that how you can show the testimonials, you can do something like this:
+
+    {% all_testimonial  as quotes %}
+        {% for quote in quotes %}
+        <p class="lead">
+            {{quote.text}}
+            {{quote.author}}
+        </p>
+        {% endfor %}
 
 To add and manage quotes, you simply add them through the Django admin.
