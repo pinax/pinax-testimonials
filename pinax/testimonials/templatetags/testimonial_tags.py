@@ -20,6 +20,7 @@ def random_testimonial():
 def testimonials(number):
     return Testimonial.objects.filter(active=True).order_by("-added")[:number]
 
+
 @register.assignment_tag
 def all_testimonial():
 	return Testimonial.objects.filter(active=True).order_by("-added")
