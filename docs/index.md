@@ -4,7 +4,7 @@
 !!! note "Pinax Ecosystem"
     This app was developed as part of the Pinax ecosystem but is just a Django app
     and can be used independently of other Pinax apps.
-    
+
     To learn more about Pinax, see <http://pinaxproject.com/>
 
 
@@ -29,10 +29,6 @@ can use template tags to add active testimonials to your page:
 
     {% load testimonial_tags %}
 
-For show all testimonials by ordered the date:
-
-    {% all_testimonial %}
-
 For random testimonials:
 
     {% random_testimonials <number> as quotes %}
@@ -42,6 +38,9 @@ For testimonials ordered by the date they were added:
 
     {% testimonials <number> as quotes %}
 
+For show all testimonials by ordered the date:, just remove number parameter, like this:
+
+    {% testimonials as quotes %}
 
 If you just want a single random testimonial you can use:
 
@@ -49,7 +48,7 @@ If you just want a single random testimonial you can use:
 
 And there is an example that how you can show the testimonials, you can do something like this:
 
-    {% all_testimonial  as quotes %}
+    {% testimonials  as quotes %}
         {% for quote in quotes %}
         <p class="lead">
             {{quote.text}}
