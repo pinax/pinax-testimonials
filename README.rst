@@ -1,5 +1,7 @@
 pinax-testimonials
 ========================
+.. image:: http://slack.pinaxproject.com/badge.svg
+   :target: http://slack.pinaxproject.com/
 
 .. image:: https://img.shields.io/travis/pinax/pinax-testimonials.svg
     :target: https://travis-ci.org/pinax/pinax-testimonials
