@@ -16,7 +16,7 @@ setup(
     description="a testimonials app",
     name="pinax-testimonials",
     long_description=read("README.rst"),
-    version="1.0",
+    version="1.0.1",
     url="http://pinax-testimonials.rtfd.org/",
     license="MIT",
     packages=find_packages(),
