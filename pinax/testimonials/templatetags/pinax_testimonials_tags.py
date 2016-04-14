@@ -13,7 +13,8 @@ def random_testimonials(number):
 
 @register.assignment_tag
 def random_testimonial():
-    return Testimonial.objects.filter(active=True).order_by("?")[:1]
+    queryset = Testimonial.objects.filter(active=True).order_by("?")
+    return queryset[0] if queryset else None
 
 
 @register.assignment_tag
