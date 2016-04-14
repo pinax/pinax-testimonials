@@ -4,7 +4,7 @@
 !!! note "Pinax Ecosystem"
     This app was developed as part of the Pinax ecosystem but is just a Django app
     and can be used independently of other Pinax apps.
-    
+
     To learn more about Pinax, see <http://pinaxproject.com/>
 
 
@@ -27,7 +27,7 @@ Add `pinax-testimonials` to your `INSTALLED_APPS` setting:
 In your template where you want to display testimonials there are three ways you
 can use template tags to add active testimonials to your page:
 
-    {% load testimonial_tags %}
+    {% load pinax_testimonials_tags %}
 
 
 For random testimonials:
