@@ -1,12 +1,11 @@
 # pinax-testimonials
 
+[Pinax](http://pinaxproject.com/pinax/) is an open source ecosystem
+of reusable Django apps, themes, and starter project templates.
 
-!!! note "Pinax Ecosystem"
-    This app was developed as part of the Pinax ecosystem but is just a Django app
-    and can be used independently of other Pinax apps.
-
-    To learn more about Pinax, see <http://pinaxproject.com/>
-
+As a reusable Django app, `pinax-testimonials` provides the ecosystem with
+a well tested, documented, and proven solution for any site that needs
+to display testimonials.
 
 ## Quickstart
 
@@ -14,7 +13,7 @@ Install the development version:
 
     pip install pinax-testimonials
 
-Add `pinax-testimonials` to your `INSTALLED_APPS` setting:
+Add `pinax.testimonials` to your `INSTALLED_APPS` setting:
 
     INSTALLED_APPS = (
         # ...
@@ -29,20 +28,16 @@ can use template tags to add active testimonials to your page:
 
     {% load pinax_testimonials_tags %}
 
-
 For random testimonials:
 
     {% random_testimonials <number> as quotes %}
-
 
 For testimonials ordered by the date they were added:
 
     {% testimonials <number> as quotes %}
 
-
 If you just want a single random testimonial you can use:
 
     {% random_testimonial as quote %}
-
 
 To add and manage quotes, you simply add them through the Django admin.
