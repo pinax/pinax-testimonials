@@ -15,14 +15,16 @@ setup(
     author_email="developers@pinaxproject.com",
     description="a testimonials app",
     name="pinax-testimonials",
-    long_description=read("README.rst"),
-    version="1.0.1",
+    long_description=read("README.md"),
+    version="1.0.2",
     url="http://pinax-testimonials.rtfd.org/",
     license="MIT",
     packages=find_packages(),
     package_data={
         "testimonials": []
     },
+    install_requires=[
+    ],
     test_suite="runtests.runtests",
     tests_require=[
     ],
