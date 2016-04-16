@@ -1,5 +1,12 @@
 # Change Log
 
+## 1.0.2
+
+* Rename templatetags file to match Pinax convention
+* Add tests
+* Add initial migration
+* Update documentation
+
 ## 1.0
 
 * Updated template tags to use `assignment_tags`
