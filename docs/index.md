@@ -2,30 +2,32 @@
 
 
 !!! note "Pinax Ecosystem"
-    This app was developed as part of the Pinax ecosystem but is just a Django app
-    and can be used independently of other Pinax apps.
+    This app is part of the Pinax ecosystem and is designed for use
+    both with and independently of other Pinax apps.
 
     To learn more about Pinax, see <http://pinaxproject.com/>
 
 
 ## Quickstart
 
-Install the development version:
+To install pinax-testimonials:
 
     pip install pinax-testimonials
 
 Add `pinax-testimonials` to your `INSTALLED_APPS` setting:
 
     INSTALLED_APPS = (
-        # ...
+        ...
         "pinax.testimonials",
-        # ...
+        ...
     )
 
 ## Usage
 
 In your template where you want to display testimonials there are three ways you
-can use template tags to add active testimonials to your page:
+can use template tags to add active testimonials to your page.
+
+First, load the template tags:
 
     {% load pinax_testimonials_tags %}
 
@@ -45,4 +47,8 @@ If you just want a single random testimonial you can use:
     {% random_testimonial as quote %}
 
 
-To add and manage quotes, you simply add them through the Django admin.
+Add and manage testimonial quotes via the Django admin.
+
+## Changelog
+
+See [Changelog](./changelog.md).
