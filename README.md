@@ -21,11 +21,12 @@ independently of other Pinax apps.
 `pinax-testimonials` is a well tested, documented, and proven solution
 for any site wanting to display testimonials.
 
-Testimonials contain text by an author, with an optional organization affiliation.
+Testimonials contain text by an author with an optional organization affiliation.
+For display, testimonials are retrieved randomly or most recent first.
 
 ## Getting Started and Documentation
 
-Follow steps outlined in [Pinax Testimonials Documentation](docs/index.md).
+Follow steps outlined in [Pinax Testimonials Documentation](https://github.com/pinax/pinax-testimonials/blob/master/docs/index.md).
 
 ## Contribute
 
