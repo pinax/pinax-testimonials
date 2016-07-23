@@ -31,7 +31,6 @@ First, load the template tags:
 
     {% load pinax_testimonials_tags %}
 
-
 For random testimonials:
 
     {% random_testimonials <number> as quotes %}
@@ -41,11 +40,23 @@ For testimonials ordered by the date they were added:
 
     {% testimonials <number> as quotes %}
 
+For show all testimonials by ordered the date:, just remove number parameter, like this:
+
+    {% testimonials as quotes %}
 
 If you just want a single random testimonial you can use:
 
     {% random_testimonial as quote %}
 
+And there is an example that how you can show the testimonials, you can do something like this:
+
+    {% testimonials  as quotes %}
+        {% for quote in quotes %}
+        <p class="lead">
+            {{quote.text}}
+            {{quote.author}}
+        </p>
+        {% endfor %}
 
 Add and manage testimonial quotes via the Django admin.
 
