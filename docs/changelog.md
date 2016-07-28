@@ -1,5 +1,13 @@
 # Change Log
 
+## 1.0.5
+
+* Update this change log
+
+## 1.0.4
+
+* Documentation updates
+
 ## 1.0.3
 
 * Rename templatetags file to match Pinax convention
