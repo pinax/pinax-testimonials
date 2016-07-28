@@ -23,7 +23,7 @@ setup(
     description="a testimonials app",
     name="pinax-testimonials",
     long_description=read_md("README.md"),
-    version="1.0.3",
+    version="1.0.4",
     url="http://pinax-testimonials.rtfd.org/",
     license="MIT",
     packages=find_packages(),
