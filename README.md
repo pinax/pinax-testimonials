@@ -26,6 +26,17 @@ Testimonials contain text by an author with an optional organization affiliation
 For display, testimonials are retrieved randomly or most recent first.
 
 
+## Table of Contents
+
+* [Getting Started and Documentation](#getting-started-and-documentation)
+* [Quickstart](#quickstart)
+* [Usage](#usage)
+* [Changelog](#changelog)
+* [Contribute](#contribute)
+* [Code of Conduct](#code-of-conduct)
+* [Pinax Project Blog and Twitter](#pinax-project-blog-and-twitter)
+
+
 ## Getting Started and Documentation
 
 ### Quickstart
