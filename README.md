@@ -16,6 +16,7 @@ starter project templates.
 This app is part of the Pinax ecosystem and is designed for use both with and
 independently of other Pinax apps.
 
+
 ## pinax-testimonials
 
 `pinax-testimonials` is a well tested, documented, and proven solution
@@ -24,9 +25,109 @@ for any site wanting to display testimonials.
 Testimonials contain text by an author with an optional organization affiliation.
 For display, testimonials are retrieved randomly or most recent first.
 
+
 ## Getting Started and Documentation
 
-Follow steps outlined in [Pinax Testimonials Documentation](https://github.com/pinax/pinax-testimonials/blob/master/docs/index.md).
+### Quickstart
+
+To install pinax-testimonials:
+
+    pip install pinax-testimonials
+
+Add `pinax-testimonials` to your `INSTALLED_APPS` setting:
+
+    INSTALLED_APPS = (
+        ...
+        "pinax.testimonials",
+        ...
+    )
+
+### Usage
+
+In your template where you want to display testimonials there are three ways you
+can use template tags to add active testimonials to your page.
+
+First, load the template tags:
+
+    {% load pinax_testimonials_tags %}
+
+For random testimonials:
+
+    {% random_testimonials <number> as quotes %}
+
+For testimonials ordered by the date they were added:
+
+    {% testimonials <number> as quotes %}
+
+For show all testimonials by ordered the date:, just remove number parameter, like this:
+
+    {% testimonials as quotes %}
+
+If you just want a single random testimonial you can use:
+
+    {% random_testimonial as quote %}
+
+And there is an example that how you can show the testimonials, you can do something like this:
+
+    {% testimonials  as quotes %}
+        {% for quote in quotes %}
+        <p class="lead">
+            {{quote.text}}
+            {{quote.author}}
+        </p>
+        {% endfor %}
+
+Add and manage testimonial quotes via the Django admin.
+
+
+## Changelog
+
+### 2.0.0
+
+* Move documentation to README.md
+
+### 1.0.5
+
+* Update this change log
+
+### 1.0.4
+
+* Documentation updates
+
+### 1.0.3
+
+* Rename templatetags file to match Pinax convention
+* Add tests
+* Add initial migration
+* Update documentation
+
+### 1.0
+
+* Updated template tags to use `assignment_tags`
+* Added bulk operations to admin to mark testimonials as active/inactive
+* Renamed from `marturian` to `pinax-testimonials` during the donation from Eldarion to Pinax
+
+### 0.2
+
+* Fixed documenation bug
+* Added a template tag for fetching a single random quote
+
+### 0.1.4
+
+* Fixed bug introduction with last bug fix.
+
+### 0.1.3
+
+* Fix bug where the random query select would make it hard to use queryset in a template using index accessors.
+
+### 0.1.2
+
+* Fixed a typo in the model name
+
+### 0.1
+
+* initial release
+
 
 ## Contribute
 
