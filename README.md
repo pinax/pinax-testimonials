@@ -22,6 +22,12 @@ Testimonials contain text by an author with an optional organization affiliation
 For display, testimonials are retrieved randomly or most recent first.
 
 
+### Supported Django and Python Versions
+
+* Django 1.8, 1.10, 1.11, and 2.0
+* Python 2.7, 3.4, 3.5, and 3.6
+
+
 ## Table of Contents
 
 * [Installation](#installation)
