@@ -1,11 +1,12 @@
 from django.test import TestCase
 
 from ..models import Testimonial
-from ..templatetags.pinax_testimonials_tags import (
-    random_testimonials as random_testimonials_tag,
-    random_testimonial as random_testimonial_tag,
-    testimonials as testimonials_tag,
-)
+from ..templatetags.pinax_testimonials_tags import \
+    random_testimonial as random_testimonial_tag
+from ..templatetags.pinax_testimonials_tags import \
+    random_testimonials as random_testimonials_tag
+from ..templatetags.pinax_testimonials_tags import \
+    testimonials as testimonials_tag
 
 
 class TestTags(TestCase):
