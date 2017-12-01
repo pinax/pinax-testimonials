@@ -1,21 +1,17 @@
+![](http://pinaxproject.com/pinax-design/patches/pinax-testimonials.svg)
+
 # Pinax Testimonials
 
-[![](http://slack.pinaxproject.com/badge.svg)](http://slack.pinaxproject.com/)
-[![](https://img.shields.io/travis/pinax/pinax-testimonials.svg)](https://travis-ci.org/pinax/pinax-testimonials)
-[![](https://img.shields.io/coveralls/pinax/pinax-testimonials.svg)](https://coveralls.io/r/pinax/pinax-testimonials)
-[![](https://img.shields.io/pypi/dm/pinax-testimonials.svg)](https://pypi.python.org/pypi/pinax-testimonials/)
 [![](https://img.shields.io/pypi/v/pinax-testimonials.svg)](https://pypi.python.org/pypi/pinax-testimonials/)
 [![](https://img.shields.io/badge/license-MIT-blue.svg)](https://pypi.python.org/pypi/pinax-testimonials/)
 
-## Pinax
+[![CircleCi](https://img.shields.io/circleci/project/github/pinax/pinax-testimonials.svg)](https://circleci.com/gh/pinax/pinax-testimonials)
+[![Codecov](https://img.shields.io/codecov/c/github/pinax/pinax-testimonials.svg)](https://codecov.io/gh/pinax/pinax-testimonials)
+[![](https://img.shields.io/github/contributors/pinax/pinax-testimonials.svg)](https://github.com/pinax/pinax-testimonials/graphs/contributors)
+[![](https://img.shields.io/github/issues-pr/pinax/pinax-testimonials.svg)](https://github.com/pinax/pinax-testimonials/pulls)
+[![](https://img.shields.io/github/issues-pr-closed/pinax/pinax-testimonials.svg)](https://github.com/pinax/pinax-testimonials/pulls?q=is%3Apr+is%3Aclosed)
 
-[Pinax](http://pinaxproject.com/pinax/) is an open-source platform built on the
-Django Web Framework. It is an ecosystem of reusable Django apps, themes, and
-starter project templates.
-
-This app is part of the Pinax ecosystem and is designed for use both with and
-independently of other Pinax apps.
-
+[![](http://slack.pinaxproject.com/badge.svg)](http://slack.pinaxproject.com/)
 
 ## pinax-testimonials
 
@@ -28,18 +24,15 @@ For display, testimonials are retrieved randomly or most recent first.
 
 ## Table of Contents
 
-* [Getting Started and Documentation](#getting-started-and-documentation)
-* [Quickstart](#quickstart)
+* [Installation](#installation)
 * [Usage](#usage)
 * [Changelog](#changelog)
 * [Contribute](#contribute)
 * [Code of Conduct](#code-of-conduct)
-* [Pinax Project Blog and Twitter](#pinax-project-blog-and-twitter)
+* [About Pinax](#about-pinax)
 
 
-## Getting Started and Documentation
-
-### Quickstart
+## Installation
 
 To install pinax-testimonials:
 
@@ -53,7 +46,7 @@ Add `pinax-testimonials` to your `INSTALLED_APPS` setting:
         ...
     )
 
-### Usage
+## Usage
 
 In your template where you want to display testimonials there are three ways you
 can use template tags to add active testimonials to your page.
@@ -154,6 +147,10 @@ We also highly recommend reading our [Open Source and Self-Care blog post](http:
 In order to foster a kind, inclusive, and harassment-free community, the Pinax Project has a code of conduct, which can be found here http://pinaxproject.com/pinax/code_of_conduct/. We ask you to treat everyone as a smart human programmer that shares an interest in Python, Django, and Pinax with you.
 
 
-## Pinax Project Blog and Twitter
+## About Pinax
+
+Pinax is an open-source platform built on the Django Web Framework. It is an ecosystem of reusable Django apps, themes, and starter project templates. This collection can be found at http://pinaxproject.com.
+
+The Pinax documentation is available at http://pinaxproject.com/pinax/. If you would like to help us improve our documentation or write more documentation, please join our Pinax Project Slack team and let us know!
 
 For updates and news regarding the Pinax Project, please follow us on Twitter at @pinaxproject and check out our blog http://blog.pinaxproject.com.
