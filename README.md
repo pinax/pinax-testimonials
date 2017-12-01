@@ -88,6 +88,10 @@ Add and manage testimonial quotes via the Django admin.
 
 ### 2.0.0
 
+* Add Django 2.0 compatibility testing
+* Drop Django 1.9 and Python 3.3 support
+* Convert CI and coverage to CircleCi and CodeCov
+* Add PyPi-compatible long description
 * Move documentation to README.md
 
 ### 1.0.5
