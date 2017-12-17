@@ -5,6 +5,7 @@ MANIFEST
 __pycache__/
 *.py[cod]
 
+
 # Distribution / packaging
 .Python
 env/
