@@ -22,7 +22,6 @@ DEFAULT_SETTINGS = dict(
         }
     },
     SITE_ID=1,
-    MIDDLEWARE_CLASSES=[],
     SECRET_KEY="notasecret",
 )
 
