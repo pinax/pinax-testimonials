@@ -1,9 +1,0 @@
-site_name: pinax-testimonials
-pages:
-- [index.md, Home]
-- [changelog.md, Change Log]
-theme: readthedocs
-repo_url: https://github.com/pinax/pinax-testimonials
-site_description: "a testimonials app"
-site_author: "Pinax Team"
-markdown_extensions: [admonition]
