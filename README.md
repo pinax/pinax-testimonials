@@ -108,6 +108,10 @@ Add and manage testimonial quotes via the Django admin.
 
 ## Change Log
 
+### 2.0.3
+
+* fix LONG_DESCRIPTION again
+
 ### 2.0.2
 
 * fix setup.py LONG_DESCRIPTION for PyPi

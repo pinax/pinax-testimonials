@@ -1,13 +1,13 @@
 from setuptools import find_packages, setup
 
-VERSION = "2.0.2"
+VERSION = "2.0.3"
 LONG_DESCRIPTION = """
 .. image:: http://pinaxproject.com/pinax-design/patches/blank.svg
     :target: https://pypi.python.org/pypi/pinax-testimonials/
 
-=================
+==================
 Pinax Testimonials
-=================
+==================
 
 .. image:: https://img.shields.io/pypi/v/pinax-testimonials.svg
     :target: https://pypi.python.org/pypi/pinax-testimonials/
