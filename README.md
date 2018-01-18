@@ -21,6 +21,9 @@
 * [Documentation](#documentation)
   * [Installation](#installation)
   * [Usage](#usage)
+    * [Template Tags](#template-tags)
+    * [Displaying Testimonials](#displaying-testimonials)
+    * [Managing Testimonials](#managing-testimonials)
 * [Change Log](#change-log)
 * [Contribute](#contribute)
 * [Code of Conduct](#code-of-conduct)
@@ -73,40 +76,52 @@ INSTALLED_APPS = [
 
 ### Usage
 
-In your template where you want to display testimonials there are three ways you
-can use template tags to add active testimonials to your page.
+#### Template Tags
 
-First, load the template tags:
+There are several templatetags which return active testimonials.
+Assuming pinax-testimonials tags are loaded via `{% load pinax_testimonials_tags %}` in your template,
+use the following template tags:
 
-```django
-{% load pinax_testimonials_tags %}
-```
+##### `random_testimonial`
 
-For random testimonials:
-
-```django
-{% random_testimonials <number> as quotes %}
-```
-
-For testimonials ordered by the date they were added:
-
-```django
-{% testimonials <number> as quotes %}
-```
-
-For show all testimonials by ordered the date:, just remove number parameter, like this:
-
-```django
-{% testimonials as quotes %}
-```
-
-If you just want a single random testimonial you can use:
+Returns a single random testimonial.
 
 ```django
 {% random_testimonial as quote %}
 ```
 
-And there is an example that how you can show the testimonials, you can do something like this:
+##### `random_testimonials`
+
+Returns testimonials ordered randomly.
+
+```django
+{% random_testimonials as quotes %}
+```
+or
+
+```django
+{% random_testimonials <number> as quotes %}
+```
+
+Optional `number` indicates how many testimonials to show. If `number` is not specified this tag returns all active testimonials.
+
+##### `testimonials`
+
+Returns testimonials ordered by date added.
+
+```django
+{% testimonials as quotes %}
+```
+
+or 
+
+```django
+{% testimonials <number> as quotes %}
+```
+
+Optional `number` indicates how many testimonials to show. If `number` is not specified this tag returns all active testimonials.
+
+#### Displaying Testimonials
 
 ```django
 {% testimonials as quotes %}
@@ -118,7 +133,9 @@ And there is an example that how you can show the testimonials, you can do somet
 {% endfor %}
 ```
 
-Add and manage testimonial quotes via the Django admin.
+#### Managing Testimonials
+
+Add and manage testimonial quotes via the Django admin console.
 
 
 ## Change Log
