@@ -58,7 +58,7 @@ Django \ Python | 2.7 | 3.4 | 3.5 | 3.6
 
 To install pinax-testimonials:
 
-```commandline
+```shell
 $ pip install pinax-testimonials
 ```
 
@@ -78,31 +78,31 @@ can use template tags to add active testimonials to your page.
 
 First, load the template tags:
 
-```djangotemplate
+```django
 {% load pinax_testimonials_tags %}
 ```
 
 For random testimonials:
 
-```djangotemplate
+```django
 {% random_testimonials <number> as quotes %}
 ```
 
 For testimonials ordered by the date they were added:
 
-```djangotemplate
+```django
 {% testimonials <number> as quotes %}
 ```
 
 For show all testimonials by ordered the date:, just remove number parameter, like this:
 
-```djangotemplate
+```django
 {% testimonials as quotes %}
 ```
 
 If you just want a single random testimonial you can use:
 
-```djangotemplate
+```django
 {% random_testimonial as quote %}
 ```
 
