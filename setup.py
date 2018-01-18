@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-VERSION = "2.0.3"
+VERSION = "2.0.4"
 LONG_DESCRIPTION = """
 .. image:: http://pinaxproject.com/pinax-design/patches/pinax-testimonials.svg
     :target: https://pypi.python.org/pypi/pinax-testimonials/
@@ -64,14 +64,14 @@ setup(
     },
     test_suite="runtests.runtests",
     tests_require=[
-        "dj-inmemorystorage>=1.4.0",
+        "dj-inmemorystorage>=1.4.1",
         "django-appconf>=1.0.1",
-        "django-test-plus>=1.0.11",
-        "mock>=1.3.0",
-        "django-user-accounts>=1.3.1",
-        "pinax-theme-bootstrap>=7.6.0",
+        "django-test-plus>=1.0.22",
+        "mock>=2.0.0",
+        "django-user-accounts>=2.0.3",
     ],
     install_requires=[
+        "django>=1.11",
         "django-appconf>=1.0.1"
     ],
     classifiers=[

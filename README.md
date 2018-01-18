@@ -58,15 +58,18 @@ Django \ Python | 2.7 | 3.4 | 3.5 | 3.6
 
 To install pinax-testimonials:
 
-    pip install pinax-testimonials
+```commandline
+$ pip install pinax-testimonials
+```
 
 Add `pinax-testimonials` to your `INSTALLED_APPS` setting:
 
-    INSTALLED_APPS = (
-        ...
-        "pinax.testimonials",
-        ...
-    )
+```python
+INSTALLED_APPS = [
+    # other apps
+    "pinax.testimonials",
+]
+```
 
 ### Usage
 
@@ -75,38 +78,59 @@ can use template tags to add active testimonials to your page.
 
 First, load the template tags:
 
-    {% load pinax_testimonials_tags %}
+```djangotemplate
+{% load pinax_testimonials_tags %}
+```
 
 For random testimonials:
 
-    {% random_testimonials <number> as quotes %}
+```djangotemplate
+{% random_testimonials <number> as quotes %}
+```
 
 For testimonials ordered by the date they were added:
 
-    {% testimonials <number> as quotes %}
+```djangotemplate
+{% testimonials <number> as quotes %}
+```
 
 For show all testimonials by ordered the date:, just remove number parameter, like this:
 
-    {% testimonials as quotes %}
+```djangotemplate
+{% testimonials as quotes %}
+```
 
 If you just want a single random testimonial you can use:
 
-    {% random_testimonial as quote %}
+```djangotemplate
+{% random_testimonial as quote %}
+```
 
 And there is an example that how you can show the testimonials, you can do something like this:
 
-    {% testimonials  as quotes %}
-        {% for quote in quotes %}
-        <p class="lead">
-            {{quote.text}}
-            {{quote.author}}
-        </p>
-        {% endfor %}
+```django
+{% testimonials  as quotes %}
+    {% for quote in quotes %}
+    <p class="lead">
+        {{quote.text}}
+        {{quote.author}}
+    </p>
+    {% endfor %}
+```
 
 Add and manage testimonial quotes via the Django admin.
 
 
 ## Change Log
+
+### 2.0.4
+
+* Add django>=1.11 to requirements
+* Update requirements for Django 2.0
+* Update CI config
+* Add sorting guidance for 3rd-party app imports
+* Improve documentation markup
+* Remove doc build support
 
 ### 2.0.3
 
