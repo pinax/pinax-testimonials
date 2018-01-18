@@ -109,13 +109,13 @@ If you just want a single random testimonial you can use:
 And there is an example that how you can show the testimonials, you can do something like this:
 
 ```django
-{% testimonials  as quotes %}
-    {% for quote in quotes %}
-    <p class="lead">
-        {{quote.text}}
-        {{quote.author}}
-    </p>
-    {% endfor %}
+{% testimonials as quotes %}
+{% for quote in quotes %}
+<p class="lead">
+    {{quote.text}}
+    {{quote.author}}
+</p>
+{% endfor %}
 ```
 
 Add and manage testimonial quotes via the Django admin.
