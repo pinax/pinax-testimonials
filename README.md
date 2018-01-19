@@ -11,7 +11,7 @@
 [![](https://img.shields.io/github/issues-pr-closed/pinax/pinax-testimonials.svg)](https://github.com/pinax/pinax-testimonials/pulls?q=is%3Apr+is%3Aclosed)
 
 [![](http://slack.pinaxproject.com/badge.svg)](http://slack.pinaxproject.com/)
-[![](https://img.shields.io/badge/license-MIT-blue.svg)](https://pypi.python.org/pypi/pinax-testimonials/)
+[![](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
 ## Table of Contents
