@@ -13,6 +13,7 @@
 [![](http://slack.pinaxproject.com/badge.svg)](http://slack.pinaxproject.com/)
 [![](https://img.shields.io/badge/license-MIT-blue.svg)](https://pypi.python.org/pypi/pinax-testimonials/)
 
+
 ## Table of Contents
 
 * [About Pinax](#about-pinax)
@@ -30,6 +31,7 @@
 * [Connect with Pinax](#connect-with-pinax)
 * [License](#license)
 
+
 ## About Pinax
 
 Pinax is an open-source platform built on the Django Web Framework. It is an ecosystem of reusable
@@ -45,7 +47,6 @@ for any site wanting to display testimonials.
 
 Testimonials contain text by an author with an optional organization affiliation.
 For display, testimonials are retrieved randomly or most recent first.
-
 
 #### Supported Django and Python versions
 
@@ -227,6 +228,7 @@ also valid but we are usually able to help you faster if you ping us in Slack.
 We also highly recommend reading our blog post on [Open Source and Self-Care](http://blog.pinaxproject.com/2016/01/19/open-source-and-self-care/).
 
 ## Code of Conduct
+
 
 In order to foster a kind, inclusive, and harassment-free community, the Pinax Project
 has a [code of conduct](http://pinaxproject.com/pinax/code_of_conduct/).
