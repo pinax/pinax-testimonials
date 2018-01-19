@@ -30,12 +30,11 @@ Pinax Testimonials
 .. image:: http://slack.pinaxproject.com/badge.svg
     :target: http://slack.pinaxproject.com/
 .. image:: https://img.shields.io/badge/license-MIT-blue.svg
-    :target: https://pypi.python.org/pypi/pinax-testimonials/
+    :target: https://opensource.org/licenses/MIT/
 
 \ 
 
 ``pinax-testimonials`` is a well tested, documented, and proven solution for any site wanting to display testimonials.
-
 
 Supported Django and Python Versions
 ------------------------------------
