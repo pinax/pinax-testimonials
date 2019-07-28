@@ -66,7 +66,7 @@ To install pinax-testimonials:
 $ pip install pinax-testimonials
 ```
 
-Add `pinax-testimonials` to your `INSTALLED_APPS` setting:
+Add `pinax.testimonials` to your `INSTALLED_APPS` setting:
 
 ```python
 INSTALLED_APPS = [
