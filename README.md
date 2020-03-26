@@ -141,6 +141,11 @@ Add and manage testimonial quotes via the Django admin console.
 
 ## Change Log
 
+### 2.0.5
+
+* Make `number` parameter optional in `testimonials` templatetag
+* Add unit test to verify all active testimonials are returned
+
 ### 2.0.4
 
 * Add django>=1.11 to requirements
