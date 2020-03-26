@@ -74,7 +74,6 @@ setup(
         "django-appconf>=1.0.1"
     ],
     classifiers=[
-    classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
         "Framework :: Django",
