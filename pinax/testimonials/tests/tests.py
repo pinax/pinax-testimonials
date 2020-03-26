@@ -54,3 +54,6 @@ class TestTags(TestCase):
         """
         testimonials = testimonials_tag(3)
         self.assertSequenceEqual(testimonials, [self.third, self.second, self.first])
+
+        testimonials = testimonials_tag()
+        self.assertSequenceEqual(testimonials, [self.third, self.second, self.first])

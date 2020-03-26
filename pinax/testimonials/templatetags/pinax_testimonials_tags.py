@@ -17,5 +17,5 @@ def random_testimonial():
 
 
 @register.simple_tag
-def testimonials(number):
+def testimonials(number=None):
     return Testimonial.objects.filter(active=True).order_by("-added")[:number]
