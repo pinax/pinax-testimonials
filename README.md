@@ -19,7 +19,7 @@
 * [About Pinax](#about-pinax)
 * [Important Links](#important-links)
 * [Overview](#overview)
-  * [Supported Django and Python versions](#supported-django-and-python-versions)
+  * [Supported Django and Python Versions](#supported-django-and-python-versions)
 * [Documentation](#documentation)
   * [Installation](#installation)
   * [Usage](#usage)
@@ -35,8 +35,7 @@
 
 ## About Pinax
 
-Pinax is an open-source platform built on the Django Web Framework. It is an ecosystem of reusable
-Django apps, themes, and starter project templates. This collection can be found at http://pinaxproject.com.
+Pinax is an open-source platform built on the Django Web Framework. It is an ecosystem of reusable Django apps, themes, and starter project templates. This collection can be found at http://pinaxproject.com.
 
 
 ## Important Links
@@ -60,7 +59,7 @@ for any site wanting to display testimonials.
 Testimonials contain text by an author with an optional organization affiliation.
 For display, testimonials are retrieved randomly or most recent first.
 
-#### Supported Django and Python versions
+#### Supported Django and Python Versions
 
 Django / Python | 3.6 | 3.7 | 3.8
 --------------- | --- | --- | ---
