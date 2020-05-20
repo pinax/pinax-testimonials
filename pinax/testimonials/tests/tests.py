@@ -39,7 +39,7 @@ class TestTags(TestCase):
         Ensure tag returns all active testimonials.
         """
         testimonials = random_testimonials_tag(3)
-        self.assertSetEqual(set(testimonials), set([self.first, self.second, self.third]))
+        self.assertSetEqual(set(testimonials), {self.first, self.second, self.third})
 
     def test_random_testimonial(self):
         """
